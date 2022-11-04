@@ -2,6 +2,10 @@ import './App.css';
 import ClickedCounter from './components/ClickedCounter';
 import HoverdCounter from './components/HoverdCounter';
 
+import ClickedCounterTwo from './components/ClickedCounterTwo';
+import Counter from './components/Counter';
+import HoverdCounterTwo from './components/HoverdCounterTwo';
+
 function App() {
   return (
     <div className='App'>
@@ -16,6 +20,18 @@ function App() {
       <br />
       <br />
       <HoverdCounter />
+      <br />
+      <br />
+      <Counter
+        render={(count, setCount) => (
+          <ClickedCounterTwo count={count} setCount={setCount} />
+        )}
+      />
+      <Counter
+        render={(count, setCount) => (
+          <HoverdCounterTwo count={count} setCount={setCount} />
+        )}
+      />
     </div>
   );
 }

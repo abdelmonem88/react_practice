@@ -1,6 +1,6 @@
-import WithCounter from '../HOC/WithCounter';
+import React from 'react';
 
-function ClickedCounter(props) {
+function ClickedCounterTwo(props) {
   const { count, setCount } = props;
 
   return (
@@ -10,4 +10,4 @@ function ClickedCounter(props) {
   );
 }
 
-export default WithCounter(ClickedCounter);
+export default ClickedCounterTwo;
