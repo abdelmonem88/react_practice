@@ -7,6 +7,8 @@ import Counter from './components/Counter';
 import HoverdCounterTwo from './components/HoverdCounterTwo';
 
 function App() {
+  console.log(ClickedCounter());
+
   return (
     <div className='App'>
       <h1
